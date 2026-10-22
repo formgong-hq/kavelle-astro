@@ -1,0 +1,8 @@
+---
+import c from "../content.json";
+---
+<div class="nums-wrap">
+  <div class="nums" aria-label={c.stats.label} data-in="up">
+    {c.stats.items.map((n) => (<div><b data-count={n.value}>{n.value}</b><span>{n.label}</span></div>))}
+  </div>
+</div>
